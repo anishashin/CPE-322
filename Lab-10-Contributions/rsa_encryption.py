@@ -133,4 +133,6 @@ def keytest(text, size):
     print("Decrypted message:",plaintext)
 
 if __name__ == "__main__":
-    keytest("Hello, World!", 8)
+    text = input("Enter the message you want to encrypt: ")
+    size = input("Enter a key length (must be even, >2): ")
+    keytest(text, int(size))
